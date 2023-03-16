@@ -1,6 +1,6 @@
 {
   "name": "impx",
-  "version": "1.0.0",
+  "version": "1.3.2",
   "description": "An easy IP Address tools for NodeJs",
   "main": "dist/index.js",
   "directories": {

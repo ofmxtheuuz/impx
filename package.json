@@ -1,0 +1,28 @@
+{
+  "name": "impx",
+  "version": "1.0.0",
+  "description": "An easy IP Address tools for NodeJs",
+  "main": "dist/index.js",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "start:test": "",
+    "start:app": "",
+    "start:dev": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofmxtheuuz/impx.git"
+  },
+  "author": "Matheus Piccoli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ofmxtheuuz/impx/issues"
+  },
+  "homepage": "https://github.com/ofmxtheuuz/impx#readme",
+  "dependencies": {
+    "@types/node": "^18.15.3"
+  }
+}

@@ -1,10 +1,10 @@
-﻿import { getLoc } from "../../src/utils/services/Geoloc";
+﻿import { getIPLocation } from "../../src/utils/services/Geoloc";
 
-getLoc("8.8.8.8").then(result => {
+getIPLocation("8.8.8.8").then(result => {
     console.log(result)
 })
 
-getLoc("1.2.3.4").then(result => {
+getIPLocation("1.2.3.4").then(result => {
     console.log(result)
 })
 

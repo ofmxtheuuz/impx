@@ -14,9 +14,9 @@ function validate(address: string, type: AddressType): boolean {
         throw new AddressTypeInvalid(500, "Invalid IP Address, use 'v4' or 'v6' (or the AddressType enum)")
     }
 }
-function ValidateIPv4(address: string): boolean {
+export function ValidateIPv4(address: string): boolean {
     return validate(address, AddressType.IPv4)
 }
-function ValidateIPv6(address:string): boolean {
+export function ValidateIPv6(address:string): boolean {
     return validate(address, AddressType.IPv6)
 }

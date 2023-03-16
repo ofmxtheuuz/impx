@@ -1,3 +1,2 @@
 ﻿import {GetIPAddressAsync} from "./utils/services/GetIPAddress";
-import {AddressType} from "./enums/AddressType.enum";
-
+import {ValidateIPv4, ValidateIPv6} from "./utils/services/Validator"

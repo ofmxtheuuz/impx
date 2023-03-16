@@ -1,7 +1,7 @@
 ﻿import {AddressType} from "../../enums/AddressType.enum";
 import {networkInterfaces} from "os"
 import GetIPs from "../../interfaces/GetIPs.interface";
-import {AddressTypeInvalid} from "../../Exceptions/AddressTypeInvalid.ex";
+import {AddressTypeInvalid} from "../../exceptions/AddressTypeInvalid.ex";
 
 async function getIPv6andIPv4(): Promise<GetIPs> {
     const interfaces = networkInterfaces();

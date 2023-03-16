@@ -14,9 +14,12 @@ function validate(address: string, type: AddressType): boolean {
         throw new AddressTypeInvalid(500, "Invalid IP Address, use 'v4' or 'v6' (or the AddressType enum)")
     }
 }
-export function ValidateIPv4(address: string): boolean {
-    return validate(address, AddressType.IPv4)
-}
-export function ValidateIPv6(address:string): boolean {
-    return validate(address, AddressType.IPv6)
+export function Validate(IPAddressType: AddressType, address: string): boolean {
+    if(IPAddressType.toLowerCase() == "v4") {
+        return validate(address, IPAddressType)
+    } else if (IPAddressType.toLowerCase() == "v6") {
+        return  validate(address, IPAddressType)
+    } else {
+        throw new AddressTypeInvalid(500, "Invalid IP Address, use 'v4' or 'v6' (or the AddressType enum)")
+    }
 }

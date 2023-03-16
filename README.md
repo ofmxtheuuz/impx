@@ -85,3 +85,11 @@ console.log(ValidateIP(AddressType.IPv4, "0.0.0.0"))
 console.log(ValidateIP(AddressType.IPv6, "0.0.0.0"))
 // false
 ````
+
+### Converter
+````ts
+import {Converter} from "impx";
+import {AddressConverterType} from "impx";
+
+console.log(Converter(AddressConverterType.Binary, "0.0.1.1"))
+````
